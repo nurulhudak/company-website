@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact - Form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<style>
+body {
+	font-family: Arial;
+	background-image: url('img/bg.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.container {
+	width: 1000px;
+	max-width: 90%;
+	margin: 80px auto;
+	color: black;
+	line-height: 1.5;
+	padding: 20px;
+	background-color: rgba(255, 255, 255, 0.8); 
+	border-radius: 10px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.content {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 40px;
+}
+
+.icon {
+    background-color: white;
+    border-radius: 30px;
+    padding: 15px;
+    vertical-align: top;
+    max-width: 30%;
+}
+
+.contact-info {
+	display: inline-block;
+	padding: 4px 20px 0px 20px;
+}
+
+.address-line {
+	margin-top: 40px;
+}
+
+.col-1 {
+	flex: 1 1 50%;
+	padding-right: 20px;
+}
+
+.col-2 {
+	flex: 1 1 50%;
+	background-color: white;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.form-container {
+	color: #000;
+}
+
+.contact-info-title {
+	color: #01bdd4;
+}
+
+.form-row {
+	padding-bottom: 30px;
+}
+
+.form-field {
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #000;
+}
+
+.send-btn {
+	border: 0px;
+	padding: 12px 26px;
+	background-color: #01bdd4;
+	color: white;
+}
+
+.video-container {
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%; 
+    margin-bottom: 30px; 
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px; 
+}
+
+@media all and (max-width: 1024px) {
+	.container {
+		width: auto;
+		padding: 30px;
+	}
+	.col-1 {
+		flex: 1 1 100%;
+		padding-right: 0;
+	}
+	.col-2 {
+		flex: 1 1 100%;
+		margin-top: 20px;
+	}
+}
+
+@media all and (max-width: 700px) {
+	.content {
+		display: block;
+	}
+	.col-1,
+	.col-2 {
+		width: 100%;
+		margin-top: 20px;
+	}
+}
+
+@media all and (max-width: 500px) {
+	.container {
+		padding: 10px;
+	}
+}
+</style>
+<body>
+        <header class="header"> 
+            <a href="home.html" class="logo">Modest ELEGANCE.co</a> 
+            <nav class="navbar"> 
+                <a href="home.html" target="bottom">Home</a> 
+                <a href="aboutus.html" target="bottom">About us</a> 
+                <a href="bawal.html" target="bottom">Bawal</a>
+                <a href="shawl.html" target="bottom">Shawl</a>
+                <a href="instant.html" target="bottom">Instant</a>
+                <a href="feedback.html">Feedback</a>   
+            </nav> 
+        </header> 
+
+    <div class="container">
+        <div class="text-center">
+            <h1>Contact</h1>
+            <div>
+                you can contact our company with the following info:
+            </div>
+        </div>
+        <div class="content">
+            <div class="col-1">
+                <div class="address-line">
+                    <img alt="instagram" src="img/phone.jpg" class="icon">
+                    <div class="contact-info">
+                        <div class="contact-info-title">Phone</div>
+                        <div>011-1441 8531</div>
+                    </div>
+                </div>
+                <div class="address-line">
+                    <img alt="instagram" src="img/email.jpg" class="icon">
+                    <div class="contact-info">
+                        <div class="contact-info-title">Email</div>
+                        <div>nurulhudakz5@gmail.com</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="form-container">
+                    <h2>This is us!!</h2>
+                    <div class="form-row">
+						<div class="video-container">
+							<video controls>
+								<source src="img/design.mp4" type="video/mp4">
+							</video>
+						</div>
+					</div>					
+            </div>
+        </div>
+    </div>
+</body>
+</html>
